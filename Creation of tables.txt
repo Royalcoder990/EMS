@@ -1,0 +1,35 @@
+create table emp(ID int(5) PRIMARY KEY,Fname varchar(20),Lname varchar(20),Address varchar(50),Dept_id int(3),IO_ref_code int(4),Acc_no char(12),Bank varchar(25),Basic int(10),HRA int(6),SA int(5),PF int(10),Club_cont int(4),Designation varchar(20),Daily_rate int(5) DEFAULT 'NULL',DOJ date,PF_Acc char(12),Type varchar(10),Password varchar(15),Rights varchar(10),Staus_AT varchar(10) DEFAULT 'INACTIVE');
+
+
+create table timesheet(ID int(5),NO_DAYS int(2),IO_REF_CODE int(4),MONTH char(9),YEAR int(4),STATUS_AD char(10) DEFAULT 'PENDING');
+
+create table Dept(Dept_ID int(3),Dept varchar(20));
+
+create table payslip(ID int(5), Net_pay int(10),tax int(10),Month char(9),Year int(4),Slip_id int(5) PRIMARY KEY IDENTITY); 
+
+create table payroll_stat(Month varchar(20),Year int(4));
+
+z='insert into emp values(ID=%s,FNAME="%s",LNAME="%s",ADDRESS="%s",DEPT_ID=%s,IO_REF_CODE=%s,ACC_NO=%s,BANK="%s",BASIC=%s,HRA=%s,SA=%s,PF=%s,CLUB_CONT=%s,DESIGNATION="%s",NULL,DOJ="%s",PF_ACC=%s,PASSWORD="%s",RIGHTS="%s",STAUS_AT="ACTIVE",DAILY_RATE=NULL,TYPE="EMPLOYEE")'%(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,s,u)
+
+z='insert into emp values()'
+
+z='insert into emp values(%s,"%s","%s","%s",%s,%s,%s,"%s",%s,%s,%s,%s,%s,"%s",NULL,"%s",%s,"%s","%s","EMPLOYEE","ACTIVE")'%(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,s,u)
+
+
+z='insert into emp values(%s,"%s","%s","%s",%s,%s,%s,"%s",%s,%s,%s,%s,%s,"%s",NULL,"%s",%s,"%s","%s","%s","ACTIVE")'%(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,s,rt)
+
+
+qagdtx10.zu3@kjjit.eu
+
+
+insert into emp(ID,FNAME,LNAME,ADDRESS,DEPT_ID,IO_REF_CODE,ACC_NO,BANK,BASIC,HRA,SA,PF,CLUB_CONT,DESIGNATION,DOJ,PF_ACC,TYPE,PASSWORD,RIGHTS)
+
+
+
+z='insert into emp(ID,Fname,Lname,Address,Dept_id,IO_ref_code,Acc_no,Bank,Basic,Club_cont,Designation,Daily_rate,DOJ,Type,Password,Rights,Staus_AT) values(%s,"%s","%s","%s",%s,%s,%s,"%s",%s,%s,"%s",%s,"%s","%s","ACTIVE")'%(a,b,c,d,e,f,g,h,i,m,n,o,s,u)
+
+
+ID, Fname,Lname,Address,Dept_id,IO_ref_code,Acc_no,Bank,Basic,HRA,SA,PF,Club_con,Designation,Daily_rate,DOJ,PF_Ac,  Type,    Password,Rights,Staus_AT
+
+%s, "%s",  "%s", "%s"   ,%s, %s    ,%s,       "%s",NULL,NULL, NULL,NULL,    %s,   "%s"         ,%s      "%s",NULL,"CONTRACT","%s",    "%s","  ACTIVE"
+a    b,    c  ,d,  e, f, g,  h,                      i,  m   ,n,  o,                   s,   u
